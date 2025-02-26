@@ -1,3 +1,7 @@
+This is a fork of ServerlessNabaztag with added hooks for recording and RFID, and some basic Python scripts for speech recognition.
+
+The original description BELOW:
+
 ServerlessNabaztag
 ==================
 
