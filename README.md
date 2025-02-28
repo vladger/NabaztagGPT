@@ -1,4 +1,7 @@
 This is a fork of ServerlessNabaztag with added hooks for recording and RFID, and some basic Python scripts for speech recognition.
+The new scripts are located in "hooks" folder. The .py scripts must be constantly running.
+ttshandler_GPT.py constantly looks for new .wav files added into folder (with record.php), converts the recording with ffmpeg, uses SpeechRecognition to convert into text, sends the text in URL to a plaintext GPT endpoint (text.pollinations.ai/ for example) with GET request, gets plaintext response and converts it into .mp3, sending it to converted folder, and plays on Nabaztag with /play .
+Connect the Nabaztag to your local IP with ServerlessNabaztag running, run the .py script, and hold the button on the bunny to record, release to send.
 
 The original description BELOW:
 
